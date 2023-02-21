@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: linear-gradient(to bottom, #00008B, #87CEEB);
+    z-index: -1;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.building, .burjkhalifa, .dubaitext, .stars{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+img .stars{
+    transform: translateZ(-40px) scale(6);
+    background-attachment: fixed;
+}
+
+.burjkhalifa{
+    transform: translateZ(-30px) scale(4);
+}
+
+img .building{
+    transform: translateZ(-20px) scale(3);
+    background-attachment: fixed;
+}
+
+.dubaitext{
+    transform: translateX(-20px) scale(1);
+}
+
+section{
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+#title1, #title2{
+    padding: 0 10rem;
+}
+
+.text{
+    padding: 0 10rem;
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 2rem 0;
+    font-family: 'Rubik', sans-serif;;
+}
+
+.contents{
+    background-color: black;
+    color: white;
+    padding: 5rem 0;
+}
+
+.contents h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contents p{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.heading{
+    position: absolute;
+    padding: 0.5rem 2.5rem;
+    background-color: black;
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Rubik', sans-serif;;
+    font-weight: 600;
+    transform: translateZ(-40px);
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-1{
+    height: 500px;
+    width: 100%;
+    background-image: url(t1.webp);
+    background-attachment: fixed;
+}
+
+.bg-2{
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    background-image: url(t1.webp);
+}
+
