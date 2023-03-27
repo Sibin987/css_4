@@ -8,13 +8,14 @@
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-    perspective: 10px;
+    perspective: 12px;
 }
 
 .container{
     position: relative;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
@@ -38,7 +39,7 @@
 }
 
 #foreground{
-    transform: translateZ(-20px) scale(3);
+    transform: translateZ(-20px) scale(4);
 }
 
 h1{
